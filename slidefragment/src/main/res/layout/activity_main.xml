@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 选项卡 -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:background="#E8E8E8"
+        android:weightSum="3">
+
+        <!-- tab1 -->
+
+        <TextView
+            android:id="@+id/tab1_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选项卡一"
+            android:textColor="#fff" />
+
+        <!-- tab2 -->
+
+        <TextView
+            android:id="@+id/tab2_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选项卡二"
+            android:textColor="#707070" />
+        <!-- tab3 -->
+
+        <TextView
+            android:id="@+id/tab3_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选项卡三"
+            android:textColor="#101010" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="0dip"
+        android:background="#CF78ABD9" />
+    <!-- 选项卡内容显示区域 -->
+</RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/third_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
